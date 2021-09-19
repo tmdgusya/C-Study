@@ -1,13 +1,15 @@
 #include <iostream> //cout, cin, endl, ...
 #include <cstdio> // prinf
 
+using namespace std;
+
+int addTwoNumbers(int numA, int numB) {
+    return numA + numB;
+}
+
 int main(int argc, const char * argv[]) {
     
-    int x;
-    
-    std::cin >> x; // input
-    
-    std::cout << "Input is : " << x << std::endl;
+    cout << addTwoNumbers(1, 2) << endl;
     
     return 0;
 }
