@@ -1,19 +1,17 @@
 #include <iostream> //cout, cin, endl, ...
-#include <cstdio> // prinf
-#include "add.hpp"
+#include <bitset>
 
 using namespace std;
 
-#define LIKE_APPLE
-
 int main(int argc, const char * argv[]) {
-#ifdef LIKE_APPLE
-    cout << "Apple" << endl;
-#endif
+    using namespace std;
+
+    int i = -1;
+    char a = 'H';
     
-#ifndef LIKE_APPLE
-    cout << "Orange" << endl;
-#endif
+    cout << (uintptr_t)static_cast<void *>(&a) << endl;
+    cout << (uintptr_t)static_cast<void *>(&i) << endl;
+    
     return 0;
 }
 
