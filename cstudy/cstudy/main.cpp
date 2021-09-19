@@ -3,13 +3,18 @@
 
 using namespace std;
 
-int addTwoNumbers(int numA, int numB) {
-    return numA + numB;
-}
-
 int main(int argc, const char * argv[]) {
+
+    int x = 0;
     
-    cout << addTwoNumbers(1, 2) << endl;
+    {
+        int x = 1; // another block
+    }
     
-    return 0;
+    {
+        int y = 2; // another block
+    }
+    
+    cout << x << endl;
+    
 }
