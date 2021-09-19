@@ -4,19 +4,10 @@
 
 using namespace std;
 
-namespace MySpace1 {
-    int doSomething(int a, int b) {
-        return a + b;
-    }
-}
-
-int doSomething(int a, int b) {
-    return a * b;
-}
+#define MAX(a,b) ((a > b) ? a : b)
 
 int main(int argc, const char * argv[]) {
-    cout << doSomething(3, 4) << endl;
-    cout << MySpace1::doSomething(3, 4) << endl;
+    cout << MAX(1, 2) << endl;
     return 0;
 }
 
