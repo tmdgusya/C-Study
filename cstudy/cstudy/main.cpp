@@ -4,10 +4,16 @@
 
 using namespace std;
 
-#define MAX(a,b) ((a > b) ? a : b)
+#define LIKE_APPLE
 
 int main(int argc, const char * argv[]) {
-    cout << MAX(1, 2) << endl;
+#ifdef LIKE_APPLE
+    cout << "Apple" << endl;
+#endif
+    
+#ifndef LIKE_APPLE
+    cout << "Orange" << endl;
+#endif
     return 0;
 }
 
