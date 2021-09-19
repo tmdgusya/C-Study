@@ -1,14 +1,10 @@
-//
-//  main.cpp
-//  cstudy
-//
-//  Created by 정승현 on 2021/09/18.
-//
-
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int x; // left value
+    x = 123; // '123' is right value
+    
+    std::cout << x << std::endl;
+    std::cout << &x << std::endl; // memory address
     return 0;
 }
