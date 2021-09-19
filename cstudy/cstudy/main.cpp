@@ -2,7 +2,12 @@
 #include <cstdio> // prinf
 
 int main(int argc, const char * argv[]) {
-    printf("roach");
-    std::cout << "roach" << std::endl;
+    
+    int x;
+    
+    std::cin >> x; // input
+    
+    std::cout << "Input is : " << x << std::endl;
+    
     return 0;
 }
