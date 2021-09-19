@@ -4,14 +4,19 @@
 
 using namespace std;
 
-//function foward declartion
-int multiply(int a, int b);
+namespace MySpace1 {
+    int doSomething(int a, int b) {
+        return a + b;
+    }
+}
+
+int doSomething(int a, int b) {
+    return a * b;
+}
 
 int main(int argc, const char * argv[]) {
-    cout << add(1, 2) << endl;
+    cout << doSomething(3, 4) << endl;
+    cout << MySpace1::doSomething(3, 4) << endl;
     return 0;
 }
 
-int multiply(int a, int b) {
-    return a * b;
-}
