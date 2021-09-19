@@ -3,18 +3,19 @@
 
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+//function foward declartion
+int add(int a, int b);
+int multiply(int a, int b);
 
-    int x = 0;
-    
-    {
-        int x = 1; // another block
-    }
-    
-    {
-        int y = 2; // another block
-    }
-    
-    cout << x << endl;
-    
+int main(int argc, const char * argv[]) {
+    cout << add(1, 2) << endl;
+    return 0;
+}
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int multiply(int a, int b) {
+    return a * b;
 }
