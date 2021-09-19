@@ -6,11 +6,21 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     using namespace std;
 
-    int i = -1;
-    char a = 'H';
+    bool bValue = false;
+    float fValue = 3.141592f;
     
-    cout << (uintptr_t)static_cast<void *>(&a) << endl;
-    cout << (uintptr_t)static_cast<void *>(&i) << endl;
+    auto aValue = 3.141592; // auto type
+    
+    cout << (bValue ? 1 : 0) << endl;
+    cout << fValue << endl;
+    cout << aValue << endl;
+    
+    int a(123); // direct initialization
+    int b{123}; // uniform initialization
+    
+    cout << sizeof(aValue) << endl; // 8byte
+    cout << a << endl;
+    cout << b << endl;
     
     return 0;
 }
