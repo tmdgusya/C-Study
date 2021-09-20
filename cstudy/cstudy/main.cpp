@@ -6,13 +6,16 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     using namespace std;
     
-    cout << numeric_limits<float>::lowest() << endl;
-    cout << numeric_limits<double>::lowest() << endl;
-    cout << numeric_limits<long double>::lowest() << endl;
+    double d1(100 - 99.99);
+    double d2(10 - 9.99);
     
-    cout << 3.14 << endl;
-    cout << 31.4e-1 << endl;
+    const double epsilon = 1e-10;
     
+    if(std::abs(d1 - d2) < epsilon) {
+        cout << "Approximately equal" << endl;
+    }
+    
+    cout << std::abs(d1 - d2) << endl;
     
     return 0;
 }
